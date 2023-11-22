@@ -15,8 +15,8 @@ io.on("connection", socket => {
   console.log("Cliente Conectado");
 });
 
-app.get("/saludo", (req, res) => {
-  res.send("Hola amigos");
+app.get("/", (req, res) => {
+  res.send("Hola amigos que tal todo soy el backend, Tranquilo no tengas miedo");
 });
 
 server.listen(3000);

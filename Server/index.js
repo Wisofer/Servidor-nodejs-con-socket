@@ -19,5 +19,9 @@ app.get("/", (req, res) => {
   res.send("Hola amigos que tal todo soy el backend, Tranquilo no tengas miedo");
 });
 
+app.get("/saludo", (req, res) => {
+  res.send("saludos muchachos ");
+});
+
 server.listen(3000);
 console.log("Servidor Encendido :D");

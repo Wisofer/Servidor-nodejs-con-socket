@@ -15,5 +15,9 @@ io.on("connection", socket => {
   console.log("Cliente Conectado");
 });
 
+app.get("/saludo", (req, res) => {
+  res.send("Hola amigos");
+});
+
 server.listen(3000);
 console.log("Servidor Encendido :D");
